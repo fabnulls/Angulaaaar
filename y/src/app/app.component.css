@@ -1,0 +1,81 @@
+.todoapp {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .todoapp h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+  }
+  
+  .todoapp input[type="text"] {
+    width: calc(100% - 60px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .todoapp input[type="text"]:focus {
+    outline: none;
+    border-color: #66afe9;
+  }
+  
+  .todoapp .todo-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .todoapp .todo-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .todoapp .todo-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .todoapp .view {
+    display: flex;
+    align-items: center;
+  }
+  
+  .todoapp .view label {
+    flex: 1;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .todoapp .view .toggle {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .todoapp .destroy {
+    width: 20px;
+    height: 60px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 40px;
+    color: #f44336;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+  }
+  
+  .todoapp .destroy:hover {
+    opacity: 1;
+  }
+  
+  .todoapp .destroy:focus {
+    outline: none;
+  }
+  

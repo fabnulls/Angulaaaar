@@ -1,0 +1,16 @@
+
+<div class="todoapp">
+  <h1>Angular To-Do List</h1>
+  
+  <input type="text" placeholder="Neue Aufgabe hinzufügen" [(ngModel)]="newTodo" (keyup.enter)="addTodo()">
+  
+  <ul class="todo-list">
+    <li *ngFor="let todo of todos" [class.completed]="todo.completed">
+      <div class="view">
+        <input type="checkbox" class="toggle" (change)="toggleCompleted(todo)">
+        <label>{{ todo.task }}</label>
+        <button class="destroy" (click)="deleteTodo(todo)">-</button>
+      </div>
+    </li>
+  </ul>
+</div>
